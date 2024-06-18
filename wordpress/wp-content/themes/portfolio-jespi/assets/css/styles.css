@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --font-family: "Roboto", sans-serif;
+  --primary: #050e2f;
+}
+
+body {
+  background-color: var(--primary);
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-custom-color {
+  background-color: #03035f;
+}
+#particle-js {
+  height: 500px;
+}
+
+nav {
+  height: 85px;
+  z-index: 1;
+}
+
+#navbarFooter {
+    color: white;
+    padding: 20px;
+    
+}
+
+#navbarFooter a {
+    text-decoration: none;
+}
+#navbarFooter ul li {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    --bs-navbar-padding-y: 0;
+}
+
+
+.nav-item {
+  width: 100px;
+  text-align: center;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.dynamic-container {
+  position: absolute;
+  margin-top: 100px;
+  /* margin: 0 auto; */
+}
+
+/* type dynamic effect*/
+
+h1 {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+h1 span {
+  position: relative;
+  color: #bd53ed;
+}
+
+h1 span::before {
+  content: "";
+  right: -8px;
+  top: 50%;
+  position: absolute;
+  height: 50px;
+  width: 2px;
+  background: #bd53ed;
+  transform: translateY(-45%);
+  animation: blink 0.7s infinite;
+}
+
+.navbar-collapse {
+  background: #03035f;
+}
+
+/* .navbar {
+                    --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+                    } */
+
+/* @media (max-width: 991px) {
+  .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+  #navbarNav {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: white;
+    position: fixed;
+    top: 89px;
+  }
+} */
+
+/*         <!-- #ffc1cb : rose -->
+#dcfbf6 : bleu clair
+#ece6c6 : jaune clair
+
+
+CADEU HELOISE X 3 PAIEMENT 
+https://boutique.orange.fr/mobile/details/apple-iphone-15-jaune-128go?intention=acquisition
+ */
