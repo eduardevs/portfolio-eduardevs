@@ -1,10 +1,23 @@
+# Ignore everything by default
 /datas/
 /wordpress/*
+
+# Allow wp-content
 !/wordpress/wp-content/
 
+# Ignore everything inside wp-content except themes
 /wordpress/wp-content/*
 !/wordpress/wp-content/themes/
+
+# Ignore all themes except portfolio-eduardevs
 /wordpress/wp-content/themes/*
 !/wordpress/wp-content/themes/portfolio-eduardevs/
 
+# Ignore vendor folder inside portfolio-eduardevs
 /wordpress/wp-content/themes/portfolio-eduardevs/vendor/
+
+# Ignore macOS system files
+.DS_Store
+
+
+/wordpress/wp-content/themes/portfolio-jespi/*
