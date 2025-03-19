@@ -5,4 +5,6 @@
 /wordpress/wp-content/*
 !/wordpress/wp-content/themes/
 /wordpress/wp-content/themes/*
-!/wordpress/wp-content/themes/portfolio-jespi/
+!/wordpress/wp-content/themes/portfolio-eduardevs/
+
+/wordpress/wp-content/themes/portfolio-eduardevs/vendor/

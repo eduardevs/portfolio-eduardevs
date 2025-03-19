@@ -1,0 +1,16 @@
+{
+    "name": "webluthier/eduardevs",
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webluthier\\Eduardevs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "eduardevs"
+        }
+    ]
+}

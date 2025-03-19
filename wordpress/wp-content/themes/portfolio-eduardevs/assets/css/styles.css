@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+.source-code-pro {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.wrapper-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 85px;
+}
+
+main {
+  flex: 1;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+:root {
+  --font-family: "Roboto", sans-serif;
+  --primary: #000000;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--primary);
+  margin: 0;
+  padding: 0;
+}
+
+#particle-js {
+  height: 500px;
+  position: absolute;
+  width: 100vw;
+}
+
+.banner-presentation {
+  /* display: flex; */
+  position: relative;
+  height: 500px;
+  top: 100px;
+  justify-content: center;
+  align-items: center;
+  /* color: white; */
+  /* text-align: center; */
+}
+
+.nav {
+  position: fixed;
+  z-index: 2;
+  height: 85px;
+}
+
+#timeline {
+  z-index: 1;
+}
+
+#navbarFooter {
+  color: white;
+  padding: 20px;
+}
+
+#navbarFooter a {
+  text-decoration: none;
+}
+#navbarFooter ul li {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  --bs-navbar-padding-y: 0;
+}
+
+.nav-item {
+  width: 100px;
+  text-align: center;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  /* position: absolute; */
+  /* right: 20%; */
+  /* top: 30%; */
+  border-radius: 50%;
+  margin-left: 150px;
+  display: block;
+}
+
+.dynamic-container {
+  /* position: absolute; */
+  margin-top: 100px;
+  /* width: 80vw; */
+  /* margin: 0 auto; */
+}
+
+/* type dynamic effect*/
+
+h1 {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+h1 span {
+  position: relative;
+  color: #bd53ed;
+}
+
+h1 span::before {
+  content: "";
+  right: -8px;
+  top: 15%;
+  position: absolute;
+  height: 50px;
+  width: 2px;
+  background: #bd53ed;
+  transform: translateY(-0%);
+  animation: blink 0.7s infinite;
+}
+
+.navbar-dark {
+  background-color: #00000081;
+}
+
+/* .navbar {
+                    --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+                    } */
+
+/* @media (max-width: 991px) {
+  .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+  #navbarNav {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: white;
+    position: fixed;
+    top: 89px;
+  }
+} */
+
+/*         <!-- #ffc1cb : rose -->
+#dcfbf6 : bleu clair
+#ece6c6 : jaune clair
+
+
+CADEU HELOISE X 3 PAIEMENT 
+https://boutique.orange.fr/mobile/details/apple-iphone-15-jaune-128go?intention=acquisition
+ */
+
+/* body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+} */
+.projects-banner {
+  display: flex;
+  width: 100%;
+  height: 400px;
+}
+
+.project-card {
+  flex: 1;
+  position: relative; /* Ensure the overlay is positioned correctly */
+  background-size: cover;
+  background-position: center;
+  overflow: hidden; /* Prevent the overlay from overflowing */
+  cursor: pointer;
+}
+
+.project-card h3,
+.project-card p {
+  margin: 0;
+}
+
+#project1 {
+  background-image: url("../images/moinsblaplusdecoeur.png");
+}
+
+#project2 {
+  background-image: url("../images/doo-pulp-project.png");
+}
+
+#project3 {
+  background-image: url("../images/saline_academy_capture.png");
+}
+
+.project-card:hover {
+  /* transform: scale(1.05); */
+}
+
+/* Overlay common styles */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.3s ease; /* Smooth transition*/
+}
+
+/* Specific overlay colors */
+.overlay1 {
+  background: rgba(52, 152, 219, 0.7); /* Overlay color for project 1 */
+}
+
+.overlay2 {
+  /* background: rgba(46, 204, 113, 0.7); Overlay color for project 2 */
+  background: rgba(52, 152, 219, 0.7); /* Overlay color for project 1 */
+}
+
+.overlay3 {
+  /* background: rgba(231, 76, 60, 0.7); Overlay color for project 3 */
+  background: rgba(52, 152, 219, 0.7); /* Overlay color for project 1 */
+}
+
+.project-card:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+/* TES*/
+
+/* button up */
+#scrollToTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 270px; /* Place the button at the bottom of the page */
+  right: 20px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  font-size: 18px; /* Increase font size */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #8a6d70; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Rounded corners */
+  transition: opacity 0.3s; /* Add transition for smooth effect */
+}
+
+#scrollToTopBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* FOOTER */
+footer .social-links {
+  display: flex;
+  justify-content: right;
+}
+
+footer .social-links a {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  width: 3rem;
+  /* height: 5rem; */
+  margin: 0;
+  transition: all ease 0.2s;
+  text-decoration: unset;
+}
+
+footer .social-links a:hover {
+  transform: scale(1.1) translateY(-2px);
+  /* .fa-twitter {
+    color: #00acee;
+  } */
+  .fa-gitlab {
+    color: #db4228;
+  }
+  .fa-linkedin {
+    color: #4875b4;
+  }
+
+  .fa-github {
+    color: #c028db;
+  }
+
+  .fa-coffee {
+    color: #f0c93d;
+  }
+  /* .fa-codepen {
+    color: #212121;
+  } */
+}
+
+footer a i {
+  transition: all ease-in-out 0.2s;
+}
+
+
+/* form */
+
+form#wpforms-form-8 {
+  padding: 70px;
+  background-color: white !important;
+}
+.wpforms-container {
+  background-color: white !important;
+}
+
+.wpforms-container input.wpforms-field-medium, .wpforms-container select.wpforms-field-medium, .wpforms-container .wpforms-field-row.wpforms-field-medium, .wp-core-ui div.wpforms-container input.wpforms-field-medium, .wp-core-ui div.wpforms-container select.wpforms-field-medium, .wp-core-ui div.wpforms-container .wpforms-field-row.wpforms-field-medium {
+  max-width: 100% !important;
+}
+
+.wpforms-submit-container {
+  display: flex;
+}
